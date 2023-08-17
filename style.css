@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+
+main {
+  border-radius: 0.5rem;
+  background: #FFF;
+  box-shadow: 0 2.0rem 5.0rem 0 rgba(0, 0, 0, 0.80);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+
+  text-align: center;
+
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+  
+  }
+
+  h1, p {
+    color: #34355B;
+  }
+
+  p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2.0rem;
+  }
+
+  .screen1 img {
+    width: 24.9rem;
+    height: 19.2rem;
+  }
+  
+  .screen1 img:hover {
+    animation-name: vibrate-fast;
+		animation-duration: 0.4s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-fill-mode: none;
+    cursor: pointer;
+  }
+
+  .screen2 p {
+    font-family: 'Dancing Script', cursive;
+    color: #000;
+    font-size: 2.4rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    padding: 1.0rem;
+    gap: 1.0rem;
+    margin-top: 1.7rem;
+
+    animation: teste 1.5s both;
+  }
+
+  .screen img {
+    width: 30.0rem;
+    height: 11.5rem;
+    margin-top: 1.7rem;
+  }
+
+  .screen2 button {
+    border-radius: 0.4rem;
+    background: #FF9500;
+    padding: 1.6rem;
+    color: #FFFFFF;
+    gap: 1.0rem;
+    border: 0;
+    margin-top: 1.7rem;
+
+    cursor: pointer;
+
+    transition: filter 300ms;
+  }
+
+  .screen2 button:hover {
+    background: #975f0f;
+  }
+
+  @keyframes vibrate-fast {
+			
+    0% {
+        transform:translate(0);
+    }
+    10% {
+        transform:translate(-2px,-2px);
+    }
+    20% {
+        transform:translate(2px,-2px);
+    }
+    30% {
+        transform:translate(-2px,2px);
+    }
+    40% {
+        transform:translate(2px,2px);
+    }
+    50% {
+        transform:translate(-2px,-2px);
+    }
+    60% {
+        transform:translate(2px,-2px);
+    }
+    70% {
+        transform:translate(-2px,2px);
+    }
+    80% {
+        transform:translate(-2px,-2px);
+    }
+    90% {
+        transform:translate(2px,-2px);
+    }
+    100% {
+        transform:translate(0);
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes teste {
+  0% {
+    transform: scale(.4) translateY(400px) ;
+  }100% {
+    transform: scale(1) translateY(0);
+  }
+}
